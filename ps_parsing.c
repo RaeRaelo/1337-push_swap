@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ps_utils.c                                         :+:      :+:    :+:   */
+/*   ps_parsing.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: adahadda <adahadda@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/10 14:27:38 by adahadda          #+#    #+#             */
-/*   Updated: 2025/12/22 14:10:55 by adahadda         ###   ########.fr       */
+/*   Updated: 2025/12/29 14:08:44 by adahadda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,7 @@ void	append_node(t_stack **stack, int n)
 
 	if (!stack)
 		return;
-	node = setstack(n);
+	node = initstack(n);
 	if (!node)
 		return;
 	if (*stack == NULL)

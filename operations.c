@@ -6,7 +6,7 @@
 /*   By: adahadda <adahadda@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/23 11:58:05 by adahadda          #+#    #+#             */
-/*   Updated: 2025/12/23 13:13:49 by adahadda         ###   ########.fr       */
+/*   Updated: 2025/12/29 14:20:25 by adahadda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,7 @@ void	push(t_stack **src, t_stack **dest)
 	{
 		*dest = tmp;
 		(*dest)->prev = NULL;
+		(*dest)->next = NULL;
 	}
 	else
 	{
@@ -45,6 +46,7 @@ void	push(t_stack **src, t_stack **dest)
 		(*dest)->prev = NULL;
 	}
 }
+
 void	rotate(t_stack **stack)
 {
 	t_stack	*last;
@@ -61,4 +63,29 @@ void	rotate(t_stack **stack)
 	head->prev = last;
 	head->next = NULL;
 	(*stack)->prev = NULL;
+}
+
+void	reverse_rotate(t_stack **stack)
+{
+	t_stack	*last;
+	t_stack	*s_last;
+
+	if (!*stack || !(*stack)->next)
+		return;
+	last = *stack;
+	while (last->next != NULL)
+		last = last->next;
+	s_last = last->prev;
+	s_last->next = NULL;
+	last->next = *stack;
+	(*stack)->prev = last;
+	last->prev = NULL;
+	*stack = last;
+}
+
+void	rrr(t_stack **a, t_stack **b)
+{
+	reverse_rotate(a);
+	reverse_rotate(b);
+	write(1, "rrr\n", 4);
 }
