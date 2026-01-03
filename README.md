@@ -9,12 +9,12 @@ In this project we need to construct a program that sorts a given set of numbers
 
 This project helps us learn and study time complexity, algorithmic complexity and sorting methods, we also have to learn optimization, and personally i got to understand more about bitwise operators, bit manipulation and doubly linked lists.
 
-###  Instructions:
+##  Instructions:
 
 To run this program simply make it using the make command, it will output a push_swap executable file, to run it simply type in the terminal "./push_swap" followed with the numbers you want to sort seperated by spaces for example: 
 ```./push_swap "12 43 21 74"```
 
-#### Resources:
+## Resources:
 
 - https://www.youtube.com/watch?v=igIjGxF2J-w
 - https://youtu.be/Y95a-8oNqps
@@ -30,4 +30,3 @@ To run this program simply make it using the make command, it will output a push
 
 - Why Radix? :
 	Radix was used due to it's efficiency when it comes to larger numbers, despite being one of the older sorting algorithms till this day it's still quite efficient, though it falls short in smaller numbers.
-	

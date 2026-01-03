@@ -6,7 +6,7 @@
 /*   By: adahadda <adahadda@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/10 14:11:47 by adahadda          #+#    #+#             */
-/*   Updated: 2026/01/03 12:59:21 by adahadda         ###   ########.fr       */
+/*   Updated: 2026/01/03 13:41:16 by adahadda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,7 @@ void	rrr(t_stack **a, t_stack **b);
 
 // sort_small.c
 void	sort_three(t_stack **a);
-void	sort_small(t_stack **a, t_stack **b); // If you have this function
+void	sort_small(t_stack **a, t_stack **b);
 
 // radix.c
 void	radix_sort(t_stack **a, t_stack **b);
