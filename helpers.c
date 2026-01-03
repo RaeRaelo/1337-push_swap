@@ -6,13 +6,13 @@
 /*   By: adahadda <adahadda@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/22 14:01:17 by adahadda          #+#    #+#             */
-/*   Updated: 2025/12/22 14:24:17 by adahadda         ###   ########.fr       */
+/*   Updated: 2026/01/03 13:00:46 by adahadda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void free_errors(t_stack **a)
+void	free_errors(t_stack **a)
 {
 	free_stack(a);
 	write(2, "Error\n", 6);
@@ -25,7 +25,7 @@ void	free_matrix(char **argv)
 
 	i = 0;
 	if (!argv)
-		return;
+		return ;
 	while (argv[i])
 	{
 		free(argv[i]);

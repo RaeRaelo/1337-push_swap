@@ -6,7 +6,7 @@
 /*   By: adahadda <adahadda@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/10 14:27:38 by adahadda          #+#    #+#             */
-/*   Updated: 2025/12/29 14:08:44 by adahadda         ###   ########.fr       */
+/*   Updated: 2026/01/03 13:05:16 by adahadda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,11 @@
 
 t_stack	*initstack(int content)
 {
-	t_stack *new_node;
+	t_stack	*new_node;
 
 	new_node = malloc(sizeof(t_stack));
 	if (!new_node)
 		return (NULL);
-	
 	new_node->value = content;
 	new_node->index = 0;
 	new_node->next = NULL;
@@ -64,10 +63,10 @@ void	append_node(t_stack **stack, int n)
 	t_stack	*last;
 
 	if (!stack)
-		return;
+		return ;
 	node = initstack(n);
 	if (!node)
-		return;
+		return ;
 	if (*stack == NULL)
 	{
 		*stack = node;
@@ -87,9 +86,9 @@ void	free_stack(t_stack **stack)
 {
 	t_stack	*current;
 	t_stack	*temp;
-	
+
 	if (!stack || !*stack)
-		return;
+		return ;
 	current = *stack;
 	while (current)
 	{

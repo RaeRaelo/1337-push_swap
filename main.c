@@ -6,13 +6,13 @@
 /*   By: adahadda <adahadda@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/21 15:47:21 by adahadda          #+#    #+#             */
-/*   Updated: 2025/12/29 14:45:11 by adahadda         ###   ########.fr       */
+/*   Updated: 2026/01/03 13:00:20 by adahadda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-int is_sorted(t_stack *a)
+int	is_sorted(t_stack *a)
 {
 	while (a && a->next)
 	{
@@ -40,7 +40,7 @@ int	get_stack_size(t_stack *a)
 	return (i);
 }
 
-int main(int argc, char **argv)
+int	main(int argc, char **argv)
 {
 	t_stack	*a;
 	t_stack	*b;

@@ -6,7 +6,7 @@
 /*   By: adahadda <adahadda@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/23 11:58:05 by adahadda          #+#    #+#             */
-/*   Updated: 2025/12/29 14:20:25 by adahadda         ###   ########.fr       */
+/*   Updated: 2026/01/03 13:05:04 by adahadda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,9 @@
 void	swap(t_stack **head)
 {
 	int	tmp;
+
 	if (!*head || !(*head)->next)
-		return;
+		return ;
 	tmp = (*head)->value;
 	(*head)->value = (*head)->next->value;
 	(*head)->next->value = tmp;
@@ -25,9 +26,9 @@ void	swap(t_stack **head)
 void	push(t_stack **src, t_stack **dest)
 {
 	t_stack	*tmp;
-	
+
 	if (!*src)
-		return;
+		return ;
 	tmp = *src;
 	*src = (*src)->next;
 	if (*src)
@@ -51,9 +52,9 @@ void	rotate(t_stack **stack)
 {
 	t_stack	*last;
 	t_stack	*head;	
-	
+
 	if (!*stack || !(*stack)->next)
-		return;
+		return ;
 	last = *stack;
 	head = *stack;
 	while (last->next)
@@ -71,7 +72,7 @@ void	reverse_rotate(t_stack **stack)
 	t_stack	*s_last;
 
 	if (!*stack || !(*stack)->next)
-		return;
+		return ;
 	last = *stack;
 	while (last->next != NULL)
 		last = last->next;

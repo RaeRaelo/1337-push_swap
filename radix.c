@@ -6,13 +6,13 @@
 /*   By: adahadda <adahadda@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/29 13:07:57 by adahadda          #+#    #+#             */
-/*   Updated: 2025/12/29 14:42:20 by adahadda         ###   ########.fr       */
+/*   Updated: 2026/01/03 13:04:47 by adahadda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-static int get_max_bits(t_stack *stack)
+static int	get_max_bits(t_stack *stack)
 {
 	t_stack	*head;
 	int		max;
